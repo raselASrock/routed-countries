@@ -9,7 +9,7 @@ const Countries = () => {
             <h2>All Countries: {countries.length}</h2>
             {
                 countries.map( country => <li key={country.cca3}>
-                    <Link  to={``}>{country.name.common}</Link>
+                    <Link  to={`/country/${country.name.common}`}>{country.name.common}</Link>
                 </li>)
             }
         </div>
